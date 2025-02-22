@@ -1,0 +1,34 @@
+{
+  "name": "react_message_shower",
+  "version": "1.0.0",
+  "main": "dist/Message.js",
+  "module": "dist/Message.mjs",
+  "files": [
+    "dist",
+    "Message.css"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.1.1"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aevamshingala/react_message_shower"
+  }
+}
