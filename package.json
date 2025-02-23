@@ -1,6 +1,6 @@
 {
   "name": "react_message_shower",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "main": "dist/Message.js",
   "module": "dist/Message.mjs",
   "files": [
@@ -17,6 +17,7 @@
   "description": "",
   "dependencies": {
     "react": "^19.0.0",
+    "react_message_shower": "^1.0.3",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {

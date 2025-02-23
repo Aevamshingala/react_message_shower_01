@@ -1,4 +1,4 @@
-import pe, { useState as we } from "react";
+import pe, { useState as we, useEffect as Ce } from "react";
 var k = { exports: {} }, w = {};
 /**
  * @license React
@@ -10,7 +10,7 @@ var k = { exports: {} }, w = {};
  * LICENSE file in the root directory of this source tree.
  */
 var ie;
-function Ce() {
+function Ne() {
   if (ie) return w;
   ie = 1;
   var c = Symbol.for("react.transitional.element"), T = Symbol.for("react.fragment");
@@ -42,7 +42,7 @@ var C = {};
  * LICENSE file in the root directory of this source tree.
  */
 var de;
-function Ne() {
+function ke() {
   return de || (de = 1, process.env.NODE_ENV !== "production" && function() {
     function c(e) {
       if (e == null) return null;
@@ -436,11 +436,11 @@ Check the top-level render call using <` + e + ">."), r;
   }()), C;
 }
 var Ee;
-function ke() {
-  return Ee || (Ee = 1, process.env.NODE_ENV === "production" ? k.exports = Ce() : k.exports = Ne()), k.exports;
+function Se() {
+  return Ee || (Ee = 1, process.env.NODE_ENV === "production" ? k.exports = Ne() : k.exports = ke()), k.exports;
 }
-var h = ke();
-function Oe({
+var h = Se();
+function Ae({
   title: c = "Hello",
   message: T = "Hi👋, I am from React Messenger",
   className: b = "",
@@ -449,7 +449,7 @@ function Oe({
   customStyles: i = {}
 }) {
   const [f, v] = we(!1);
-  return useEffect(() => {
+  return Ce(() => {
     f && setTimeout(() => {
       document.querySelector(".frame").style.display = "none";
     }, 500);
@@ -469,5 +469,5 @@ function Oe({
   );
 }
 export {
-  Oe as default
+  Ae as default
 };
