@@ -1,11 +1,10 @@
 {
-  "name": "react_message_shower",
-  "version": "1.0.4",
-  "main": "dist/Message.js",
-  "module": "dist/Message.mjs",
+  "name": "react_message_shower_01",
+  "version": "1.0.7",
+  "main": "dist/Message.cjs.js",
+  "module": "dist/Message.es.js",
   "files": [
-    "dist",
-    "Message.css"
+    "dist"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,21 +14,21 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
-    "react": "^19.0.0",
-    "react_message_shower": "^1.0.3",
-    "react-dom": "^19.0.0"
-  },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
-    "vite": "^6.1.1"
+    "vite": "^6.1.1",
+    "vite-plugin-css-injected-by-js": "^3.5.2"
   },
   "peerDependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": ">=18.0.0 <20.0.0",
+    "react-dom": ">=18.0.0 <20.0.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Aevamshingala/react_message_shower"
+  },
+  "exports": {
+    "import": "./dist/Message.es.js",
+    "require": "./dist/Message.cjs.js"
   }
 }

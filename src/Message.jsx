@@ -13,11 +13,13 @@ function Message({
   const [close, setClose] = useState(false);
 
   useEffect(() => {
+    let timer;
     if (close) {
-      setTimeout(() => {
-        document.querySelector(".frame").style.display = "none";
-      }, 500); // Match the fadeOutSlide animation time
+      timer = setTimeout(() => {
+        setClose(false); // Hides the component properly
+      }, 500); // Match fadeOut animation
     }
+    return () => clearTimeout(timer);
   }, [close]);
 
   return (
