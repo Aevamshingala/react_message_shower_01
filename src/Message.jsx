@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
-
 import "./App.css";
 
 function Message({
-  title = "Hello",
-  message = "Hi👋, I am from React Messenger",
+  title = "Notification",
+  message = "This is a creative notification message!",
   className = "",
   titleColor = "",
   messageColor = "",
@@ -12,15 +11,14 @@ function Message({
 }) {
   const [close, setClose] = useState(false);
 
+  // Auto-close the notification after 5 seconds
   useEffect(() => {
-    let timer;
-    if (close) {
-      timer = setTimeout(() => {
-        setClose(false); // Hides the component properly
-      }, 500); // Match fadeOut animation
-    }
+    const timer = setTimeout(() => {
+      setClose(true);
+    }, 5000); // Auto-close after 5 seconds
+
     return () => clearTimeout(timer);
-  }, [close]);
+  }, []);
 
   return (
     <div
