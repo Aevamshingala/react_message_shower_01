@@ -1,6 +1,6 @@
 {
   "name": "react_message_shower_01",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "dist/Message.cjs.js",
   "module": "dist/Message.es.js",
   "files": [

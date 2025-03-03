@@ -16,3 +16,25 @@ vite.config.js
 .next/
 out/
 build/
+
+# Ignore the dist folder
+dist/
+
+# Ignore node_modules folder
+node_modules/
+
+# Ignore environment variables
+.env
+.env.local
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore build files
+build/
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
